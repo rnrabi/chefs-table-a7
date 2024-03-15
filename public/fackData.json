@@ -1,0 +1,102 @@
+[
+    {
+      "recipe_id": 1,
+      "recipe_name": "Spaghetti Carbonara",
+      "short_description": "Classic Italian pasta dish with creamy sauce",
+      "image": "spaghetti_carbonara.jpg",
+      "ingredients": [
+        "Spaghetti",
+        "Eggs",
+        "Parmesan cheese",
+        "Bacon or pancetta",
+        "Garlic",
+        "Black pepper"
+      ],
+      "preparing_time": 30,
+      "calories": 450
+    },
+    {
+      "recipe_id": 2,
+      "recipe_name": "Chicken Alfredo",
+      "short_description": "Creamy pasta with grilled chicken",
+      "image": "chicken_alfredo.jpg",
+      "ingredients": [
+        "Fettuccine",
+        "Chicken breast",
+        "Heavy cream",
+        "Parmesan cheese",
+        "Garlic",
+        "Butter"
+      ],
+      "preparing_time": 40,
+      "calories": 550
+    },
+    {
+      "recipe_id": 3,
+      "recipe_name": "Caprese Salad",
+      "short_description": "Simple and fresh Italian salad",
+      "image": "caprese_salad.jpg",
+      "ingredients": [
+        "Tomatoes",
+        "Fresh mozzarella cheese",
+        "Basil leaves",
+        "Extra virgin olive oil",
+        "Balsamic vinegar",
+        "Salt"
+      ],
+      "preparing_time": 15,
+      "calories": 200
+    },
+    {
+      "recipe_id": 4,
+      "recipe_name": "Grilled Salmon",
+      "short_description": "Healthy and flavorful seafood dish",
+      "image": "grilled_salmon.jpg",
+      "ingredients": [
+        "Salmon fillets",
+        "Lemon",
+        "Olive oil",
+        "Garlic",
+        "Dill",
+        "Salt and pepper"
+      ],
+      "preparing_time": 20,
+      "calories": 350
+    },
+    {
+      "recipe_id": 5,
+      "recipe_name": "Vegetable Stir-Fry",
+      "short_description": "Quick and colorful Asian-inspired dish",
+      "image": "vegetable_stir_fry.jpg",
+      "ingredients": [
+        "Broccoli",
+        "Bell peppers",
+        "Carrots",
+        "Mushrooms",
+        "Soy sauce",
+        "Garlic",
+        "Ginger",
+        "Sesame oil"
+      ],
+      "preparing_time": 25,
+      "calories": 250
+    },
+    {
+      "recipe_id": 6,
+      "recipe_name": "Homemade Pizza",
+      "short_description": "Create your own pizza with your favorite toppings",
+      "image": "homemade_pizza.jpg",
+      "ingredients": [
+        "Pizza dough",
+        "Tomato sauce",
+        "Mozzarella cheese",
+        "Pepperoni",
+        "Bell peppers",
+        "Onions",
+        "Mushrooms"
+      ],
+      "preparing_time": 35,
+      "calories": 400
+    }
+  ]
+  
