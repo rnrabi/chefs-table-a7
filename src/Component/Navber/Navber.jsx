@@ -12,8 +12,8 @@ const Navber = () => {
                 </ul>
             </div>
             <div className="flex items-center gap-3">
-                <input type="text" name="" id="" placeholder="search" />
-                <p><CgProfile /></p>
+                <input className="p-2" type="text" name="" id="" placeholder="search" />
+                <p className="bg-[#0BE58A] p-2 rounded-full text-3xl"><CgProfile /></p>
             </div>
         </div>
     );
