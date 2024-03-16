@@ -1,15 +1,32 @@
 import { useState } from "react";
 import Cart from "../Cart/Cart";
 import { useEffect } from "react";
+import Table from "../Table/Table";
+import {toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Recipes = () => {
-    const [chefCart , setChefCart] = useState([])
+    const [chefCart , setChefCart] = useState([]);
+    const [table , setTable] = useState([]);
     useEffect( ()=>{
         fetch('/public/fackData.json')
         .then(res =>res.json())
         .then(data => setChefCart(data))
     } , [])
 // console.log(chefCart)
+const addTable = (crt)=>{
+    const notify = () => toast("Already you have added!");
+    console.log(crt);
+    const remainingTable = table.find(rest =>rest.recipe_id ==crt.recipe_id);
+    if(!remainingTable){
+        setTable([...table , crt]);
+    }
+    else{
+        {notify()}
+    }
+}
+// console.log(table);
 
 
     return (
@@ -18,44 +35,21 @@ const Recipes = () => {
             <p className="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque adipisci sed totam omnis animi at obcaecati eum nobis, eaque eveniet.</p>
 
             <div className="grid grid-cols-12 gap-5">
-                 <div className="col-span-8 grid grid-cols-2 justify-between gap-10">
+                 <div className="col-span-7 grid grid-cols-2 justify-between gap-10">
                     {
                         chefCart.map(crt =>(
                             <Cart
                              key={crt.id}
                              crt={crt}
+                             addTable={addTable}
                              ></Cart>
                         ))
                     }
                 </div>
 
-                <div className="col-span-4">
-                <h2 className="text-2xl text-center">Want to clock: 0</h2>
-                <div className="overflow-x-auto">
-                        <table className="table">
-                            {/* head */}
-                            <thead>
-                            <tr>
-                                <th></th>
-                                <th>Name</th>
-                                <th>Time</th>
-                                <th>Calories</th>
-                            </tr>
-                            </thead>
-                            
-                            <tbody>
-                            {/* row 1 */}
-
-                            <tr>
-                                <th>1</th>
-                                <td>Cy Ganderton</td>
-                                <td>Quality Control Specialist</td>
-                                <td>Blue</td>
-                            </tr>
-
-                            </tbody>
-                        </table>
-                    </div>
+                <div className="col-span-5">
+                <h2 className="text-2xl text-center">Want to clock: {table.length}</h2>
+                <Table table={table}></Table>
                 </div>
             </div>
 

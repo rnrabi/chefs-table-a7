@@ -3,7 +3,7 @@ import { GoClock } from "react-icons/go";
 import { AiTwotoneFire } from "react-icons/ai";
 
 
-const Cart = ({crt}) => {
+const Cart = ({crt , addTable}) => {
 
     const {recipe_name , short_description , ingredients, image} = crt;
 
@@ -35,7 +35,7 @@ const Cart = ({crt}) => {
                 </div>
 
                 <div className="card-actions">
-                <button className="btn btn-primary rounded-full">want to cook</button>
+                <button onClick={()=>addTable(crt)} className="btn btn-primary rounded-full">want to cook</button>
                 </div>
             </div>
 
@@ -47,6 +47,7 @@ const Cart = ({crt}) => {
 
 Cart.propTypes = {
     crt : PropTypes.object.isRequired,
+    addTable : PropTypes.func.isRequired,
 }
 
 export default Cart;
