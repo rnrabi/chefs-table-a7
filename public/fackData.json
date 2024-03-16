@@ -3,7 +3,7 @@
       "recipe_id": 1,
       "recipe_name": "Spaghetti Carbonara",
       "short_description": "Classic Italian pasta dish with creamy sauce",
-      "image": "spaghetti_carbonara.jpg",
+      "image": "https://media.istockphoto.com/id/1200090744/photo/wholegrain-spaghetti-with-tomato-sauce-and-minced-meat.jpg?s=612x612&w=0&k=20&c=85QpMVANnZuthLNj5hmzRCKM658HoUBWZ59wrUy_2JQ=",
       "ingredients": [
         "Spaghetti",
         "Eggs",
@@ -19,7 +19,7 @@
       "recipe_id": 2,
       "recipe_name": "Chicken Alfredo",
       "short_description": "Creamy pasta with grilled chicken",
-      "image": "chicken_alfredo.jpg",
+      "image": "https://media.istockphoto.com/id/1197770633/photo/wholegrain-spaghetti-with-tomato-sauce-and-minced-meat.jpg?s=612x612&w=0&k=20&c=rEpwRgLIlwDQtjis5LtTJ7ZLfNevc7XFTON7K-Tgvy4=",
       "ingredients": [
         "Fettuccine",
         "Chicken breast",
@@ -35,7 +35,7 @@
       "recipe_id": 3,
       "recipe_name": "Caprese Salad",
       "short_description": "Simple and fresh Italian salad",
-      "image": "caprese_salad.jpg",
+      "image": "https://media.istockphoto.com/id/1328124599/photo/traditional-italian-pasta-carbonara-with-bacon-cheese-and-egg-yolk-spaghetti-sprinkled-cheese.jpg?s=612x612&w=0&k=20&c=4M2RzjS22TJoWpHAUVD5YKTp6Y5knfCuVKvcHyX7cB0=",
       "ingredients": [
         "Tomatoes",
         "Fresh mozzarella cheese",
@@ -51,7 +51,7 @@
       "recipe_id": 4,
       "recipe_name": "Grilled Salmon",
       "short_description": "Healthy and flavorful seafood dish",
-      "image": "grilled_salmon.jpg",
+      "image": "https://media.istockphoto.com/id/1500917445/photo/sprinkle-grated-aged-parmesan-cheese-over-spaghetti-bolognese.jpg?s=612x612&w=0&k=20&c=InzLRRYOeLtUeO4zpa_hILnGoW3dPRuOC78qZr2ZEtE=",
       "ingredients": [
         "Salmon fillets",
         "Lemon",
@@ -67,7 +67,7 @@
       "recipe_id": 5,
       "recipe_name": "Vegetable Stir-Fry",
       "short_description": "Quick and colorful Asian-inspired dish",
-      "image": "vegetable_stir_fry.jpg",
+      "image": "https://media.istockphoto.com/id/1166662282/photo/spaghetti-with-bolognese-sauce-and-grated-parmesan-cheese.jpg?s=612x612&w=0&k=20&c=R0b2FIQzLH3pqKDB3a3FPmLHJwK5ffJti_FPh6Jek18=",
       "ingredients": [
         "Broccoli",
         "Bell peppers",
@@ -85,7 +85,7 @@
       "recipe_id": 6,
       "recipe_name": "Homemade Pizza",
       "short_description": "Create your own pizza with your favorite toppings",
-      "image": "homemade_pizza.jpg",
+      "image": "https://media.istockphoto.com/id/1503834450/photo/delicious-asian-udon-dish-with-vegetables-mushrooms-salt-and-spices.jpg?s=612x612&w=0&k=20&c=rkxznwpJGpJGcdmghbOlFiBZJ7x5qxJyMw0wT2OXnT4=",
       "ingredients": [
         "Pizza dough",
         "Tomato sauce",
