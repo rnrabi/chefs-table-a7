@@ -15,8 +15,8 @@ const TableTwo = ({current}) => {
 
 
     return (
-        <div>
-            <h2 className="text-center text-2xl">Currently cooking: {current.length}</h2>
+        <div className='mt-6'>
+            <h2 className="text-2xl font-semibold text-[#282828] text-center py-2">Currently cooking: {current.length}</h2>
             <hr className="border-gray-300"/>
                 <div className="overflow-x-auto">
                     <table className="table">
@@ -46,7 +46,7 @@ const TableTwo = ({current}) => {
                         }                        
                         </tbody>
                     </table>
-                    <div className='flex justify-end gap-4 font-bold text-2xl'>
+                    <div className='flex justify-end gap-4 font-semibold text-xl text-[#282828CC]'>
                         <h2>Total time = {totalTime} </h2>
                         <h2>Total calories = {totalCalories} </h2>
                     </div>

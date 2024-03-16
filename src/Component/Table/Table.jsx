@@ -8,7 +8,7 @@ const Table = ({table , currentAdd}) => {
                         <table className="table">
                             {/* head */}
                             <thead>
-                            <tr>
+                            <tr className='font-medium text-[#878787]'>
                                 <th></th>
                                 <th>Name</th>
                                 <th>Time</th>
@@ -16,7 +16,7 @@ const Table = ({table , currentAdd}) => {
                             </tr>
                             </thead>
                             
-                            <tbody>
+                            <tbody className="font-medium text-[#878787]">
                             {/* row 1 */}
 
                             {
@@ -26,7 +26,7 @@ const Table = ({table , currentAdd}) => {
                                     <td>{data.recipe_name}</td>
                                     <td>{data.preparing_time} minutes</td>
                                     <td>{data.calories} calories</td>
-                                    <td><button onClick={()=>currentAdd(data)} className="btn btn-primary rounded-full">preparing</button></td>
+                                    <td><button onClick={()=>currentAdd(data)} className="btn bg-[#0BE58A] rounded-full">preparing</button></td>
                                 </tr> 
                                 ))
                             }

@@ -16,11 +16,11 @@ const Cart = ({crt , addTable}) => {
              <figure><img className='w-full h-56' src={image} alt="Shoes" /></figure>
 
             <div className="space-y-5">
-                <h2 className="card-title">{recipe_name}</h2>
-                <p>{short_description}</p>
+                <h2 className="card-title text-lg font-semibold text-[#282828]">{recipe_name}</h2>
+                <p className="text-[#878787]">{short_description}</p>
                 <div>
-                    <h2>Ingreadients:{ingredients.length}</h2>
-                    <ul className='list-disc pl-4'>
+                    <h2 className="text-lg font-semibold text-black">Ingreadients:{ingredients.length}</h2>
+                    <ul className='list-disc pl-4 text-[#878787] '>
                        {
                         ingredients.map((ingre , index) =>(
                             <li key={index}>{ingre}</li>
@@ -30,12 +30,12 @@ const Cart = ({crt , addTable}) => {
                 </div>
 
                 <div className="flex justify-between">
-                    <p className="flex items-center gap-2"><GoClock></GoClock>30 min</p>
-                    <p className="flex items-center gap-2"> <AiTwotoneFire></AiTwotoneFire> 600 calories</p>
+                    <p className="flex items-center gap-2 text-[#282828CC]"><GoClock></GoClock>30 min</p>
+                    <p className="flex items-center gap-2 text-[#282828CC]"> <AiTwotoneFire></AiTwotoneFire> 600 calories</p>
                 </div>
 
-                <div className="card-actions">
-                <button onClick={()=>addTable(crt)} className="btn btn-primary rounded-full">want to cook</button>
+                <div className="card-actions pb-1">
+                <button onClick={()=>addTable(crt)} className="btn bg-[#0BE58A] rounded-full text-lg font-medium text-[#150B2B]">want to cook</button>
                 </div>
             </div>
 
