@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
-const Table = ({table}) => {
-    console.log(table)
+const Table = ({table , currentAdd}) => {
+    // console.log(table)
     return (
         <div>
             <div className="overflow-x-auto">
@@ -26,7 +26,7 @@ const Table = ({table}) => {
                                     <td>{data.recipe_name}</td>
                                     <td>{data.preparing_time} minutes</td>
                                     <td>{data.calories} calories</td>
-                                    <td><button className="btn btn-primary rounded-full">preparing</button></td>
+                                    <td><button onClick={()=>currentAdd(data)} className="btn btn-primary rounded-full">preparing</button></td>
                                 </tr> 
                                 ))
                             }
@@ -40,6 +40,7 @@ const Table = ({table}) => {
 
 Table.propTypes = {
     table: PropTypes.array.isRequired,
+    currentAdd:PropTypes.func.isRequired,
 }
 
 

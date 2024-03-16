@@ -4,11 +4,13 @@ import { useEffect } from "react";
 import Table from "../Table/Table";
 import {toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import TableTwo from "../TableTwo/TableTwo";
 
 
 const Recipes = () => {
     const [chefCart , setChefCart] = useState([]);
     const [table , setTable] = useState([]);
+    const [current , setCurrent] = useState([]);
     useEffect( ()=>{
         fetch('/public/fackData.json')
         .then(res =>res.json())
@@ -17,7 +19,7 @@ const Recipes = () => {
 // console.log(chefCart)
 const addTable = (crt)=>{
     const notify = () => toast("Already you have added!");
-    console.log(crt);
+    // console.log(crt);
     const remainingTable = table.find(rest =>rest.recipe_id ==crt.recipe_id);
     if(!remainingTable){
         setTable([...table , crt]);
@@ -26,7 +28,15 @@ const addTable = (crt)=>{
         {notify()}
     }
 }
-// console.log(table);
+
+const currentAdd = (addCurrent)=>{
+    // console.log('current add is clicked')
+    setCurrent([...current , addCurrent]);
+    const remainingCurrentTable = table.filter(it =>it.recipe_id !==addCurrent.recipe_id);
+    setTable(remainingCurrentTable);
+}
+
+console.log(current);
 
 
     return (
@@ -49,7 +59,9 @@ const addTable = (crt)=>{
 
                 <div className="col-span-5">
                 <h2 className="text-2xl text-center">Want to clock: {table.length}</h2>
-                <Table table={table}></Table>
+                <hr className="border-gray-300" />
+                <Table table={table} currentAdd={currentAdd}></Table>
+                <TableTwo current={current}></TableTwo>
                 </div>
             </div>
 
