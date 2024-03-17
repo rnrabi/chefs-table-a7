@@ -44,8 +44,8 @@ console.log(current);
             <h2 className="text-center text-4xl font-semibold text-[#150B2B]">Our Recipes</h2>
             <p className="text-center text-[#150B2B99] mb-12">We make a wide variety of delicious food. You can easily get cheap and fresh nutritious food here. Below are some food samples.</p>
 
-            <div className="grid grid-cols-12 gap-5">
-                 <div className="col-span-7 grid grid-cols-2 justify-between gap-10">
+            <div className="md:grid grid-cols-12 gap-5">
+                 <div className="md:col-span-7 md:grid grid-cols-2 justify-between gap-10">
                     {
                         chefCart.map(crt =>(
                             <Cart
@@ -57,7 +57,7 @@ console.log(current);
                     }
                 </div>
 
-                <div className="col-span-5">
+                <div className="md:col-span-5">
                 <h2 className="text-2xl font-semibold text-[#282828] text-center">Want to clock: {table.length}</h2>
                 <hr className="border-gray-300" />
                 <Table table={table} currentAdd={currentAdd}></Table>
