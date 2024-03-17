@@ -12,7 +12,7 @@ const Recipes = () => {
     const [table , setTable] = useState([]);
     const [current , setCurrent] = useState([]);
     useEffect( ()=>{
-        fetch('/public/fackData.json')
+        fetch('fackData.json')
         .then(res =>res.json())
         .then(data => setChefCart(data))
     } , [])
